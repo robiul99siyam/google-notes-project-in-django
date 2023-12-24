@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for i in remin %}
+<div class="card my-5 w-25 p-5 m-auto shadow-sm">
+  <div class="card-body">
+    <h5 class="card-title">{{i.title}}</h5>
+    <p class="card-text">
+      {{i.description}}
+    </p>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}

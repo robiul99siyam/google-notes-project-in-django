@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for i in tmp %}
+<div class="card my-5 w-25 p-5 m-auto shadow-sm">
+  <div class="card-body">
+    <h5 class="card-title">{{i.title}}</h5>
+    <p class="card-text">
+      {{i.description}}
+    </p>
+    <div class="d-flex">
+        <a class="me-auto" href="{% url 'data_update' i.id %}"> <i class="bi bi-pen text-dark text-start "></i></a>
+        <a class="ms-auto"  href="{% url 'delete' i.id %}"> <i class="bi bi-trash text-dark text-start "></i></a>
+       </div>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}

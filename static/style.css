@@ -1,0 +1,39 @@
+#id_title {
+  border: none;
+  padding: 5px;
+  outline: none;
+  box-shadow: var(--bs-box-shadow-sm) !important;
+}
+
+.textarea {
+  border: solid white;
+  border: none;
+  padding: 5px;
+  outline: none;
+  height: 10px;
+  box-shadow: var(--bs-box-shadow-sm) !important;
+
+}
+
+#pro {
+  margin-left: 85%;
+}
+
+.new-btn {
+  border: none;
+  border-radius: 0px 50px 50px 0px;
+  background-color: #fff;
+  margin-top: 5px;
+}
+
+.new-btn:hover {
+  background-color: rgb(241, 243, 244);
+  box-shadow: var(--bs-box-shadow-sm) !important
+}
+
+
+.new-btn:visited {
+  background-color: rgb(244, 239, 195);
+  border: 1px solid black;
+}
+
